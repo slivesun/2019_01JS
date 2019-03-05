@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //赋值时 不带var 相当于给window上添加一个属性 不会参加变量提升
+
+        // 因为a没有参加变量提升
+        // console.log(a)//error:a is not defined
+
+        // 这样写是给window添加一个属性叫a 属性值 10
+        // a = 10
+        // console.log(a)//10
+        // console.log(window.a)//window是可以忽略的
+
+
+        // 全局中 声明一个变量 同时也会给window上添加一盒属性
+        var n = 10
+        console.log(n)
+        
+    </script>
+</body>
+</html>
